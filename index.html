@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-en="PauseClock — A fasting timer that stays on your phone" data-title-zh="停刻 PauseClock — 只留在一台手机里的断食计时器">PauseClock — A fasting timer that stays on your phone</title>
+<meta name="description" content="PauseClock is a minimal, fully offline fasting timer. No account, no ads, no subscription. One-time purchase.">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+      <defs>
+        <linearGradient id="vg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFD9A0"/>
+          <stop offset="1" stop-color="#E0784F"/>
+        </linearGradient>
+      </defs>
+      <path d="M15 3.6a11.4 11.4 0 1 1-8.06 3.34" fill="none" stroke="url(#vg)" stroke-width="3.1" stroke-linecap="round"/>
+      <circle cx="6.94" cy="6.94" r="2.5" fill="#FFD9A0"/>
+    </svg>
+    <span class="wordmark" data-en="PauseClock" data-zh="停刻">PauseClock</span>
+  </div>
+  <h1 data-en="A fasting timer that stays on your phone" data-zh="只留在一台手机里的断食计时器">A fasting timer that stays on your phone</h1>
+  <p class="tag" data-en="No account. No ads. No subscription." data-zh="没有账号 · 没有广告 · 没有订阅">No account. No ads. No subscription.</p>
+  <p class="sub" data-en="Timer, fasting records, progress ring, history and reminders — all on this device, all offline." data-zh="计时、断食周期记录、进度圆环、历史统计与本地提醒 —— 全部在本机、全程离线。">Timer, fasting records, progress ring, history and reminders — all on this device, all offline.</p>
+  <div class="chips">
+    <span class="chip" data-en="100% offline" data-zh="100% 离线">100% offline</span>
+    <span class="chip" data-en="One-time purchase" data-zh="一次买断">One-time purchase</span>
+    <span class="chip" data-en="No analytics SDK" data-zh="不接分析 SDK">No analytics SDK</span>
+    <span class="chip" data-en="Export anytime" data-zh="随时导出">Export anytime</span>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html" class="active" data-en="Overview" data-zh="产品主页">Overview</a>
+  <a href="support.html" data-en="Support" data-zh="技术支持">Support</a>
+  <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+  <a href="terms.html" data-en="Terms" data-zh="使用条款">Terms</a>
+  <span class="lang">
+    <button class="langbtn" data-lang="en">EN</button>
+    <button class="langbtn" data-lang="zh">中文</button>
+  </span>
+</nav>
+
+<main>
+
+  <section>
+    <p class="lead"
+       data-en="Most fasting apps ask you to sign up before you can start a timer, then keep the timer behind a subscription. PauseClock does the opposite: the core loop is free, works with the network off, and never asks who you are."
+       data-zh="大多数断食 App 要求你先注册账号才能开始计时，再把计时功能锁进订阅里。PauseClock 反过来做：核心闭环完全免费、断网也能用，而且从不问你是谁。">Most fasting apps ask you to sign up before you can start a timer, then keep the timer behind a subscription. PauseClock does the opposite: the core loop is free, works with the network off, and never asks who you are.</p>
+  </section>
+
+  <section>
+    <h2 data-en="What it does" data-zh="它能做什么">What it does</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">⏱️</div>
+        <h3 data-en="Honest timing" data-zh="可信的计时">Honest timing</h3>
+        <p data-en="Elapsed time is computed from absolute timestamps, not from a running counter. Change your time zone, fly, or restart your phone — the duration stays correct."
+           data-zh="时长由绝对时间戳算出，不靠累加计数器。跨时区、飞行、重启手机，时长都不会算错。">Elapsed time is computed from absolute timestamps, not from a running counter.</p>
+      </div>
+      <div class="card">
+        <div class="ico">◐</div>
+        <h3 data-en="A calm progress ring" data-zh="克制的进度圆环">A calm progress ring</h3>
+        <p data-en="One glance tells you where you are. No confetti, no streaks you can lose, no guilt copy."
+           data-zh="一眼看清现在处于什么状态。没有撒花动画，没有会断掉的连胜，也没有制造焦虑的文案。">One glance tells you where you are.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🗓️</div>
+        <h3 data-en="History and statistics" data-zh="历史与统计">History and statistics</h3>
+        <p data-en="A calendar heat map, a duration chart, completion rate and averages over 7, 30 or 90 days."
+           data-zh="日历热力图、时长柱状图，以及 7 / 30 / 90 天的完成率与平均值。">Calendar heat map, duration chart, completion rate and averages.</p>
+      </div>
+      <div class="card">
+        <div class="ico">⚖️</div>
+        <h3 data-en="Weight, kept simple" data-zh="简单的体重记录">Weight, kept simple</h3>
+        <p data-en="One entry per day, shown as a trend. Optionally read from and written to Apple Health — only when you ask."
+           data-zh="每天一条，以趋势呈现。可选与「健康」互通读写 —— 只在你主动操作时发生。">One entry per day, shown as a trend.</p>
+      </div>
+      <div class="card">
+        <div class="ico">🔔</div>
+        <h3 data-en="Local reminders only" data-zh="只有本地提醒">Local reminders only</h3>
+        <p data-en="Goal reached and eating-window alerts are scheduled on your device, with quiet hours. Nothing is pushed from a server, because there is no server."
+           data-zh="「达成目标」与「进食窗口即将结束」都在本机排程，支持免打扰时段。没有服务器推送，因为根本没有服务器。">Local reminders with quiet hours.</p>
+      </div>
+      <div class="card">
+        <div class="ico">📥</div>
+        <h3 data-en="Your data, portable" data-zh="数据可带走">Your data, portable</h3>
+        <p data-en="Export everything to JSON or CSV whenever you like. Import is preview-then-confirm — nothing is written behind your back."
+           data-zh="随时把全部数据导出为 JSON 或 CSV。导入先预览再确认，绝不会背着你写数据。">Export to JSON or CSV anytime.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Three things we will not do" data-zh="我们坚持的三条">Three things we will not do</h2>
+    <div class="principles">
+      <div class="principle">
+        <div class="num">1</div>
+        <h3 data-en="Never paywall the timer" data-zh="不把计时锁进付费">Never paywall the timer</h3>
+        <p data-en="Starting and ending a fast is free forever, and it works with the network off."
+           data-zh="开始与结束断食永久免费，并且断网可用。">Starting and ending a fast is free forever.</p>
+      </div>
+      <div class="principle">
+        <div class="num">2</div>
+        <h3 data-en="Never hide your records" data-zh="不隐藏你的记录">Never hide your records</h3>
+        <p data-en="Free users still see that older records exist and how many. We summarise them — we do not make them disappear."
+           data-zh="免费用户依然能看到更早记录存在、有多少条。我们做的是汇总，不是让它们消失。">Older records are summarised, never hidden.</p>
+      </div>
+      <div class="principle">
+        <div class="num">3</div>
+        <h3 data-en="Never auto-renew" data-zh="不做自动续订">Never auto-renew</h3>
+        <p data-en="PauseClock Pro is a one-time purchase. There is no subscription to forget about and no cancellation maze."
+           data-zh="PauseClock Pro 是一次买断。没有会被忘记的订阅，也没有取消的迷宫。">Pro is a one-time purchase.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Free, and Pro" data-zh="免费版与 Pro">Free, and Pro</h2>
+    <p data-en="The free tier is a complete tool, not a demo." data-zh="免费版是完整的工具，不是试用版。">The free tier is a complete tool, not a demo.</p>
+    <div class="tiers">
+      <div class="tier">
+        <div class="name" data-en="Free · forever" data-zh="免费 · 永久">Free · forever</div>
+        <ul>
+          <li data-en="Full timer, start and stop with no account" data-zh="完整计时，无需账号即可开始">Full timer, no account</li>
+          <li data-en="Fasting records and the progress ring" data-zh="断食周期记录与进度圆环">Fasting records and the progress ring</li>
+          <li data-en="7-day and 30-day statistics" data-zh="7 天 / 30 天统计">7-day and 30-day statistics</li>
+          <li data-en="Weight log and trend" data-zh="体重记录与趋势">Weight log and trend</li>
+          <li data-en="Local reminders with quiet hours" data-zh="本地提醒与免打扰时段">Local reminders</li>
+          <li data-en="JSON / CSV export, anytime" data-zh="随时导出 JSON / CSV">JSON / CSV export</li>
+        </ul>
+      </div>
+      <div class="tier hi">
+        <div class="name" data-en="Pro · one-time purchase" data-zh="Pro · 一次买断">Pro · one-time purchase</div>
+        <ul>
+          <li data-en="Full history charts up to 90 days" data-zh="最长 90 天的完整历史图表">Full history charts up to 90 days</li>
+          <li data-en="Home screen widget (small and medium)" data-zh="主屏幕小组件（小 / 中号）">Home screen widget</li>
+          <li data-en="Six hand-tuned themes" data-zh="六套精心调校的主题">Six hand-tuned themes</li>
+          <li data-en="Long-term weight trend" data-zh="长期体重趋势">Long-term weight trend</li>
+          <li data-en="All future features in the Pro line" data-zh="Pro 线上的后续新功能">All future Pro-line features</li>
+        </ul>
+      </div>
+    </div>
+    <p class="hint mt" data-en="Purchases and refunds are handled by Apple. On a new device, use Restore Purchases inside the app; you never need to pay twice."
+       data-zh="购买与退款均由 Apple 处理。换新设备后在 App 内使用「恢复购买」即可，不需要二次付费。">Purchases and refunds are handled by Apple.</p>
+  </section>
+
+  <section>
+    <h2 data-en="Built for correctness" data-zh="为「算得准」而做">Built for correctness</h2>
+    <div class="callout">
+      <p data-en="If the device clock is changed while a fast is running, PauseClock detects it, flags the fast in progress, and leaves your finished records untouched. It never silently rewrites history."
+         data-zh="若断食进行中设备时间被改动，PauseClock 会检测到、标记这一次断食，并且不去动已完成的历史记录。它绝不静默改写历史。">If the device clock is changed mid-fast, PauseClock flags it and leaves finished records untouched.</p>
+    </div>
+    <table>
+      <tr>
+        <th data-en="Concern" data-zh="你担心的问题">Concern</th>
+        <th data-en="How PauseClock handles it" data-zh="PauseClock 的处理方式">How PauseClock handles it</th>
+      </tr>
+      <tr>
+        <td data-en="Duration drifts when the app is in the background" data-zh="切到后台时长就不准">Duration drifts in background</td>
+        <td data-en="Durations come from stored absolute timestamps, so background time is accounted for exactly." data-zh="时长来自存储的绝对时间戳，后台时间一样精确计入。">Computed from absolute timestamps.</td>
+      </tr>
+      <tr>
+        <td data-en="Time zone changes" data-zh="跨时区">Time zone changes</td>
+        <td data-en="The zone you were in is recorded as a note only. It never enters the maths." data-zh="当时所在时区只作为备注保存，不参与任何计算。">Zone is stored as a note only.</td>
+      </tr>
+      <tr>
+        <td data-en="Reinstalling or switching phones" data-zh="重装或换手机">Reinstall or new phone</td>
+        <td data-en="Export a JSON backup before you switch, then import it on the new device after a preview." data-zh="换机前导出 JSON 备份，在新设备上预览确认后再导入。">Export, then import with preview.</td>
+      </tr>
+      <tr>
+        <td data-en="Data corruption" data-zh="数据损坏">Data corruption</td>
+        <td data-en="The app checks its own store on launch, reports what it finds, and only fixes it if you tap Repair." data-zh="启动时自检，把发现的问题如实列出，只有你点「修复」才会处理。">Self-check on launch, repair only on request.</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2 data-en="Health and safety" data-zh="健康与安全">Health and safety</h2>
+    <p data-en="PauseClock is a timekeeping tool. It does not give medical advice, and it makes no claims about what fasting does inside your body."
+       data-zh="PauseClock 是计时工具，不提供医疗建议，也不对断食在体内的作用做任何宣称。">PauseClock is a timekeeping tool.</p>
+    <div class="callout">
+      <p data-en="Not suitable for anyone under 18, pregnant or breastfeeding, or with a history of eating disorders. Talk to a doctor before changing how you eat. Fasts longer than 24 hours carry real risk — PauseClock warns you before you start one."
+         data-zh="18 岁以下、孕期、哺乳期或有进食障碍史者不宜使用。改变饮食习惯前请咨询医生。超过 24 小时的断食存在真实风险，PauseClock 会在开始前提醒你。">Not suitable for anyone under 18, pregnant or breastfeeding, or with a history of eating disorders.</p>
+    </div>
+  </section>
+
+  <section class="center">
+    <h2 data-en="Get PauseClock" data-zh="获取 PauseClock">Get PauseClock</h2>
+    <p data-en="Available on the App Store for iPhone and iPad." data-zh="已在 App Store 上架，支持 iPhone 与 iPad。">Available on the App Store for iPhone and iPad.</p>
+    <div class="actions">
+      <!-- TODO：拿到 App Store 应用 ID 后，替换为 https://apps.apple.com/app/idXXXXXXXXXX -->
+      <a class="cta" href="https://apps.apple.com/search?term=PauseClock%20fasting%20timer" data-en="View on the App Store" data-zh="在 App Store 查看">View on the App Store</a>
+      <a class="btn-secondary" href="support.html" data-en="Contact support" data-zh="联系技术支持">Contact support</a>
+    </div>
+    <p class="hint mt" data-en="The button currently opens an App Store search. Replace it with the real product link once the app is live."
+       data-zh="当前按钮跳转到 App Store 搜索页；应用上架后请替换为真实的应用页面地址。">Replace with the real product link once live.</p>
+  </section>
+
+</main>
+
+<footer>
+  停刻 · PauseClock<br>
+  <div class="links">
+    <a href="index.html" data-en="Overview" data-zh="产品主页">Overview</a>
+    <a href="support.html" data-en="Support" data-zh="技术支持">Support</a>
+    <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+    <a href="terms.html" data-en="Terms" data-zh="使用条款">Terms</a>
+  </div>
+  <span data-en="© 2026 PauseClock. All rights reserved." data-zh="© 2026 PauseClock 保留所有权利。">© 2026 PauseClock. All rights reserved.</span><br>
+  <span class="meta">Bundle ID: com.pauseclock.app · <a href="mailto:miclshui@gmail.com">miclshui@gmail.com</a></span>
+</footer>
+
+<script src="assets/lang.js"></script>
+</body>
+</html>

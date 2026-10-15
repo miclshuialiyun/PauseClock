@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-title-en="Support — PauseClock" data-title-zh="技术支持 — 停刻 PauseClock">Support — PauseClock</title>
+<meta name="description" content="Support for PauseClock, the local-only fasting timer. Contact, FAQ, restore purchases, export and import.">
+<link rel="icon" href="assets/icon-180.png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true">
+      <defs>
+        <linearGradient id="vg" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#FFD9A0"/><stop offset="1" stop-color="#E0784F"/>
+        </linearGradient>
+      </defs>
+      <path d="M15 3.6a11.4 11.4 0 1 1-8.06 3.34" fill="none" stroke="url(#vg)" stroke-width="3.1" stroke-linecap="round"/>
+      <circle cx="6.94" cy="6.94" r="2.5" fill="#FFD9A0"/>
+    </svg>
+    <span class="wordmark" data-en="PauseClock" data-zh="停刻">PauseClock</span>
+  </div>
+  <h1 data-en="Support" data-zh="技术支持">Support</h1>
+  <p class="sub" data-en="A real person reads every message." data-zh="每一封邮件都会有人认真看。">A real person reads every message.</p>
+</header>
+
+<nav>
+  <a href="index.html" data-en="Overview" data-zh="产品主页">Overview</a>
+  <a href="support.html" class="active" data-en="Support" data-zh="技术支持">Support</a>
+  <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+  <a href="terms.html" data-en="Terms" data-zh="使用条款">Terms</a>
+  <span class="lang">
+    <button class="langbtn" data-lang="en">EN</button>
+    <button class="langbtn" data-lang="zh">中文</button>
+  </span>
+</nav>
+
+<main>
+
+  <section class="center">
+    <h2 data-en="Contact us" data-zh="联系我们">Contact us</h2>
+    <p data-en="Email is the fastest way to reach us. Please include your iOS version and what you were doing when the problem happened."
+       data-zh="邮件是最快的联系渠道。请一并告诉我们你的 iOS 版本，以及出问题时你正在做什么。">Email is the fastest way to reach us.</p>
+    <div class="actions">
+      <a class="cta" href="mailto:miclshui@gmail.com?subject=PauseClock%20support">miclshui@gmail.com</a>
+    </div>
+    <p class="hint mt" data-en="We aim to reply within two business days." data-zh="我们通常会在两个工作日内回复。">We aim to reply within two business days.</p>
+  </section>
+
+  <section>
+    <h2 data-en="Frequently asked" data-zh="常见问题">Frequently asked</h2>
+    <div class="faq">
+
+      <details>
+        <summary data-en="I paid for Pro but it is still locked" data-zh="我已购买 Pro，但仍显示未解锁">I paid for Pro but it is still locked</summary>
+        <p data-en="Open <strong>Settings → Membership → Restore purchases</strong>. This asks Apple to re-verify what your Apple ID owns and re-applies the entitlement. Make sure the device is signed in to the same Apple ID you bought with, and that you have a network connection at that moment. If it still does not unlock, email us with the approximate purchase date."
+           data-zh="打开 <strong>设置 → 会员 → 恢复购买</strong>。这会请 Apple 重新核验你的 Apple ID 拥有什么，并重新应用权益。请确认设备登录的是购买时使用的同一个 Apple ID，并且当时网络可用。如果仍未解锁，请邮件告知我们大致的购买日期。">Open Settings → Membership → Restore purchases.</p>
+      </details>
+
+      <details>
+        <summary data-en="I have a new phone. Do I have to pay again?" data-zh="换了新手机，需要重新付费吗？">I have a new phone. Do I have to pay again?</summary>
+        <p data-en="No. Sign in to the same Apple ID and tap <strong>Restore purchases</strong>. Pro is a one-time purchase tied to your Apple ID, not to a device. Note that your fasting and weight records do not travel automatically — export a JSON backup on the old device and import it on the new one (<strong>Settings → Data</strong>)."
+           data-zh="不需要。登录同一个 Apple ID 后点击 <strong>恢复购买</strong> 即可。Pro 是一次买断，绑定 Apple ID 而不是设备。请注意：断食与体重记录不会自动迁移 —— 请在旧设备导出 JSON 备份，在新设备导入（<strong>设置 → 数据</strong>）。">No. Restore purchases on the new device.</p>
+      </details>
+
+      <details>
+        <summary data-en="How do I move my data to a new device?" data-zh="如何把数据迁移到新设备？">How do I move my data to a new device?</summary>
+        <p data-en="On the old device: <strong>Settings → Data → Export backup (JSON)</strong>, and save it somewhere you can reach from the new device. On the new device: <strong>Settings → Data → Import backup</strong>, pick the file, review the preview, then confirm. Nothing is written until you confirm, and conflicting entries are never guessed at."
+           data-zh="在旧设备：<strong>设置 → 数据 → 导出备份（JSON）</strong>，保存到新设备能取到的位置。在新设备：<strong>设置 → 数据 → 导入备份</strong>，选择该文件，查看预览后再确认。在你确认之前不会写入任何内容，冲突条目也不会被擅自猜测处理。">Export on the old device, import on the new one.</p>
+      </details>
+
+      <details>
+        <summary data-en="The timer looks wrong, or a record is flagged" data-zh="计时看起来不对，或某条记录被标记了">The timer looks wrong, or a record is flagged</summary>
+        <p data-en="PauseClock stores absolute timestamps and compares the device's wall clock against a monotonic clock. If the device time is changed while a fast is running — manually, by a network time update, or by travel across a large time-zone boundary — the fast in progress gets a small flag, and you will see a notice. Finished records are never rewritten. Durations are computed from stored timestamps, so they remain correct."
+           data-zh="PauseClock 存储绝对时间戳，并把设备墙钟与单调时钟做比对。若断食进行中设备时间被改动 —— 手动修改、网络时间校正，或跨越大跨度时区 —— 进行中的那一次会被打上一个小标记，并出现提示。已完成的记录绝不会被改写；时长由存储的时间戳算出，因此依然正确。">PauseClock flags it rather than silently changing anything.</p>
+      </details>
+
+      <details>
+        <summary data-en="Do I need an internet connection?" data-zh="需要联网吗？">Do I need an internet connection?</summary>
+        <p data-en="No. Starting, ending and browsing your records all work completely offline. The only things that need a connection are Apple's purchase and restore flows, because those are handled by the App Store."
+           data-zh="不需要。开始、结束以及查看记录都完全离线可用。唯一需要网络的只有 Apple 的购买与恢复流程，因为那由 App Store 处理。">No — everything works offline except purchases.</p>
+      </details>
+
+      <details>
+        <summary data-en="The widget is not updating" data-zh="小组件不刷新">The widget is not updating</summary>
+        <p data-en="Widgets are refreshed by iOS on its own schedule, typically no more often than about once a minute. If it looks stale, open the app once — that pushes a fresh snapshot. Also check that <strong>Settings → Membership</strong> shows Pro as active, since the widget is a Pro feature."
+           data-zh="小组件由 iOS 按其自身节奏刷新，通常不快于每分钟一次。若显示陈旧，打开一次 App 即可推送新的快照。同时请确认 <strong>设置 → 会员</strong> 中 Pro 处于已解锁状态，小组件属于 Pro 功能。">Open the app once to push a fresh snapshot.</p>
+      </details>
+
+      <details>
+        <summary data-en="Reminders are not arriving" data-zh="提醒没有出现">Reminders are not arriving</summary>
+        <p data-en="Check three things: the reminder toggle is on in <strong>Settings → Reminders</strong>; PauseClock has notification permission in iOS Settings → Notifications; and the time is not inside your quiet hours (10 pm – 8 am by default). Focus modes and a silenced device can also suppress them."
+           data-zh="请检查三件事：<strong>设置 → 提醒</strong> 中对应的开关已打开；iOS「设置 → 通知」中已允许 PauseClock 发送通知；目标时间不在免打扰时段内（默认 22:00–08:00）。专注模式和静音设备状态也可能屏蔽提醒。">Check the toggle, the permission, and quiet hours.</p>
+      </details>
+
+      <details>
+        <summary data-en="I want to use weight but not Health" data-zh="我想记体重，但不想用「健康」">I want to use weight but not Health</summary>
+        <p data-en="That is the default. The weight log works entirely on its own; Health integration is off until you turn it on, and you can type every entry by hand forever. PauseClock only reads and writes body weight, and only when you ask."
+           data-zh="这本来就是默认状态。体重记录完全独立可用，「健康」互通默认关闭，你完全可以一直手动录入。PauseClock 只读写体重一项，且仅在你主动操作时发生。">Health integration is off by default.</p>
+      </details>
+
+      <details>
+        <summary data-en="How do I delete everything?" data-zh="如何删除全部数据？">How do I delete everything?</summary>
+        <p data-en="<strong>Settings → Data → Erase all data</strong>. This removes every fasting record and weight entry from the device and cannot be undone — export first if you might want a copy. Deleting the app has the same effect."
+           data-zh="<strong>设置 → 数据 → 清除全部数据</strong>。这会从设备上删除全部断食记录与体重数据，且无法撤销 —— 如果可能还需要，请先导出。卸载 App 效果相同。">Settings → Data → Erase all data.</p>
+      </details>
+
+      <details>
+        <summary data-en="Can I get a refund?" data-zh="可以退款吗？">Can I get a refund?</summary>
+        <p data-en="Refunds are handled entirely by Apple, and only Apple can issue them. Request one at <a href=\"https://reportaproblem.apple.com\" rel=\"noopener\">reportaproblem.apple.com</a>. If the app is malfunctioning, please tell us too — we would rather fix the bug."
+           data-zh="退款完全由 Apple 处理，也只有 Apple 能发起。请在 <a href=\"https://reportaproblem.apple.com\" rel=\"noopener\">reportaproblem.apple.com</a> 申请。如果 App 存在故障，也请告诉我们 —— 我们更希望把问题修好。">Refunds are issued by Apple only.</p>
+      </details>
+
+      <details>
+        <summary data-en="Is PauseClock safe for me?" data-zh="PauseClock 适合我吗？">Is PauseClock safe for me?</summary>
+        <p data-en="We cannot answer that for you, and we will not pretend to. PauseClock is a timer, not medical advice. It is not intended for anyone under 18, pregnant or breastfeeding, or with a history of eating disorders. If you are unsure whether time-restricted eating suits you, ask a doctor."
+           data-zh="这个问题我们无法替你回答，也不会假装能回答。PauseClock 是计时工具，不是医疗建议。它不面向 18 岁以下人群、孕期与哺乳期人群，或有进食障碍史者。如果你不确定限时进食是否适合自己，请咨询医生。">We cannot answer that — please ask a doctor.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <section>
+    <h2 data-en="Reporting a problem" data-zh="反馈问题">Reporting a problem</h2>
+    <p data-en="To help us fix things quickly, please include:"
+       data-zh="为了帮我们更快定位，请尽量附上：">To help us fix things quickly, please include:</p>
+    <ul>
+      <li data-en="Device model and iOS version (for example: iPhone 17 Pro, iOS 26.2)." data-zh="设备型号与 iOS 版本（例如：iPhone 17 Pro，iOS 26.2）。">Device model and iOS version</li>
+      <li data-en="The app version, shown at the bottom of Settings → About." data-zh="App 版本，可在「设置 → 关于」底部看到。">The app version</li>
+      <li data-en="What you did, what you expected, and what happened instead." data-zh="你做了什么、预期是什么、实际发生了什么。">What you did and what happened</li>
+      <li data-en="A screenshot if the problem is visual." data-zh="如果是界面问题，附一张截图。">A screenshot if it is visual</li>
+    </ul>
+    <p data-en="Please do not send exported data files unless we ask — they contain your personal records."
+       data-zh="除非我们主动请你提供，否则请勿发送导出的数据文件 —— 其中包含你的个人记录。">Please do not send exported data unless asked.</p>
+  </section>
+
+  <section>
+    <h2 data-en="If you are in crisis" data-zh="如果你正处于危机中">If you are in crisis</h2>
+    <div class="callout">
+      <p data-en="If you are struggling with your relationship to food, please talk to a doctor or a qualified professional rather than an app. Eating disorders are serious and treatable, and they deserve real clinical help."
+         data-zh="如果你正被饮食问题困扰，请去找医生或专业人士，而不是一个 App。进食障碍是严重的、也是可以治疗的，它需要真正的临床帮助。">Please talk to a doctor or qualified professional.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  停刻 · PauseClock<br>
+  <div class="links">
+    <a href="index.html" data-en="Overview" data-zh="产品主页">Overview</a>
+    <a href="support.html" data-en="Support" data-zh="技术支持">Support</a>
+    <a href="privacy.html" data-en="Privacy" data-zh="隐私政策">Privacy</a>
+    <a href="terms.html" data-en="Terms" data-zh="使用条款">Terms</a>
+  </div>
+  <span data-en="© 2026 PauseClock. All rights reserved." data-zh="© 2026 PauseClock 保留所有权利。">© 2026 PauseClock. All rights reserved.</span><br>
+  <span class="meta">miclshui@gmail.com</span>
+</footer>
+
+<script src="assets/lang.js"></script>
+</body>
+</html>
